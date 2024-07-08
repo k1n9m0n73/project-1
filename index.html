@@ -17,6 +17,33 @@
             padding: 20px 0;
             text-align: center;
         }
+        header img {
+            max-width: 100px;
+            display: block;
+            margin: 0 auto 10px;
+        }
+        nav {
+            background-color: #005a9e;
+            overflow: hidden;
+        }
+        nav ul {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            padding: 10px 20px;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-size: 18px;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
         section {
             padding: 20px;
         }
@@ -53,6 +80,10 @@
             .issue {
                 flex: 0 0 45%;
             }
+            nav ul li {
+                display: block;
+                padding: 10px 0;
+            }
         }
         @media (max-width: 480px) {
             .issue {
@@ -63,15 +94,25 @@
 </head>
 <body>
     <header>
+        <img src="logo.png" alt="Azure Issues Logo">
         <h1>Azure Compute, Storage & Networking Issues</h1>
     </header>
-    <section>
+    <nav>
+        <ul>
+            <li><a href="#intro">Introduction</a></li>
+            <li><a href="#compute">Compute Issues</a></li>
+            <li><a href="#storage">Storage Issues</a></li>
+            <li><a href="#networking">Networking Issues</a></li>
+            <li><a href="#contact">Contact Information</a></li>
+        </ul>
+    </nav>
+    <section id="intro">
         <div class="container">
             <h2>Introduction</h2>
             <p>Welcome to our Azure issues page. Here we discuss common problems and solutions for Azure Compute, Storage, and Networking.</p>
         </div>
     </section>
-    <section>
+    <section id="compute">
         <div class="container">
             <h2>Compute Issues</h2>
             <div class="issues">
@@ -90,7 +131,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="storage">
         <div class="container">
             <h2>Storage Issues</h2>
             <div class="issues">
@@ -109,7 +150,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="networking">
         <div class="container">
             <h2>Networking Issues</h2>
             <div class="issues">
@@ -128,7 +169,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="contact">
         <div class="container">
             <h2>Contact Information</h2>
             <p>If you have any questions or need further assistance, please contact us at <a href="mailto:support@azureissues.com">support@azureissues.com</a>.</p>
