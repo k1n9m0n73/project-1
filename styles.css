@@ -145,4 +145,16 @@ footer {
     nav ul li {
         padding: 10px 0;
     }
+.header-container h1{
+    display: none;
+}
+#intro h3{
+    width: 100%;
+}
+#intro p {
+     width: 100%;
+}
+.container{
+    width: 100%;
+}
 }
